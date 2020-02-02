@@ -2,9 +2,57 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-header {
-    background-color:fff;
-    height:60px;
+@font-face {
+    font-family: 'High Tower Text';
+    font-weight: normal;
+    font-style: normal;
+}
+
+$accent: #57C3E9;
+$black: #292929;
+$dark: #666;
+$darkGray: #999999;
+$gray: #D8D8D8;
+$lightGray: #f5f5f3;
+$white: white;
+
+//mixin
+
+@mixin boxBase($margin: 30px auto, $padding: 10px) {
+  margin: $margin;
+  padding: $padding;
+}
+@mixin basePadding($padding: 10px) {
+  padding: $padding;
+}
+@mixin baseMargin($margin: 10px auto) {
+  margin: $margin;
+}
+
+body,html {
+  height: 100%;
+  background-color: $lightGray;
+}
+
+body {
+  padding-top: 60px;
+}
+
+h1,h2,h3,h4,h5,h6,body {
+line-height: 1.57;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  color: $dark;
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $dark;
+  &:hover {
+    color: $accent;
+  }
 }
 
 
