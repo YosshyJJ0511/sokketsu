@@ -9,6 +9,7 @@
 }
 
 $accent: #57C3E9;
+$indigo: #4B0082;
 $black: #292929;
 $dark: #666;
 $darkGray: #999999;
@@ -29,23 +30,58 @@ $white: white;
   margin: $margin;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.header-logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-list {
+  font-size: 1.0rem;
+  font-family: 'High Tower Text';
+  text-align: right;
+}
+
+header, html {
+  padding: 0px 0px 0px 0px;
+  height: 100px;
+  background-color:$white;
+}
+
+
 body,html {
   height: 100%;
-  background-color: $lightGray;
+  background-color: $lightGray
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
-h1,h2,h3,h4,h5,h6,body {
-line-height: 1.57;
-  letter-spacing: 0.15em;
-  font-size: 16px;
-  color: $dark;
-  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
-  margin: 0;
+.contents1 {
+  display: inline-block;         /* ボックスにして表示/
+  height:  600px;             /* 高さ指定 */
+  text-align: center;  
+  width: 100%;  
+  background-color: $lightGray;
+  vertical-align:  top;
+  box-sizing: border-box;
 }
+
+.contents2 {
+  display: inline-block;         /* ボックスにして表示/
+  height:  600px;             /* 高さ指定 */
+  text-align: center;  
+  width: 100%;  
+  background-color: $lightGray;
+  vertical-align:  top;
+  box-sizing: border-box;
+}
+
 
 a {
   text-decoration: none;
@@ -55,4 +91,12 @@ a {
   }
 }
 
+.body {
+line-height: 1.5;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  color: $dark;
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  margin: 0;
+}
 
